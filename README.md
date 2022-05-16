@@ -2,30 +2,37 @@
 Calcula a média de alunos entre as salas de aulas e exibir as que salas que estão acima da média.
 ------------------------------------------------------
 # ALGORITMO DO EXERCÍCIO 
-Início 
+Início
+	
+	Declarar Array -> int[] salas
+	Declarar soma de alunos -> soma 
+	Declarar sala com mais alunos -> sala_maior
+	Declarar ala com menos alunos -> sala_menor
+	Declarar variáveis contadoras -> cont, cont2
+	Enquanto cont < 6. Faça
+	  Receber quantidade de alunos nas sala em var de entrada de dados -> input 
+	  salas[cont] = input
+	  soma = soma + salas[cont]
+	  cont = cont + 1
+ 	FimEnquanto
+	  Calcular média -> soma/6
+	  Atribuir um valor do array as variáveis -> sala_maior  = sala_menor = salas[0]
+	  Declarar var com índice da sala maior e menor -> index_sala_maior e index_sala_menor
+	Enquanto cont2 < 6. Faça
+	  Se salas [cont] > sala maior. Então 
+	    sala_maior = salas[cont] 
+	    index_sala_maior  = (cont + 1)
+	Se não 
+	  Se salas[cont] < sala_menor. Então
+	    sala_menor = salas[cont] 
+	    index_sala_menor  = (cont + 1)
+	cont2 = cont2 + 1
+	FimEnquanto 
+	Exibir sala_maior e sala_menor	
 
-	Atribuir e declarar valores ao array
-	Q[] = {35, 4, 22, 20, 30, 36}
-	Declarar variável contadora cont e soma
-	Se cont <= 6
-	Então
-	  soma = soma + Q[cont]
-	Se não
-	Declarar e exibir media_alunos = soma / 6
-	Declarar variável contadora cont_2
-	Se cont_2 <= 6 
-	Então
-	  Se Q[cont_2] > media_alunos  
-	  Então
-	    A sala (cont_2 +1) está acima da média de alunos.
-	    cont_2 = cont_2 + 1 
-	  Se não 
-	     A sala (cont_2 +1) não está acima da média de alunos.
-	     cont_2 = cont_2 + 1
-  Se não 
-  
 Fim
 
 
 ------------------------------------------------------
+![fluxograma_media_alunos_salasa_etapa2](https://user-images.githubusercontent.com/84599880/168633163-95929383-10c8-460d-a2bd-07fd8bb4e95d.png)
 
