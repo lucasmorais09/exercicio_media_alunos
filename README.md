@@ -28,5 +28,4 @@ Fim
 
 
 ------------------------------------------------------
-![fluxograma_media_alunos_salas](https://user-images.githubusercontent.com/84599880/167879825-5a46d941-6bc2-4615-aa10-d3f09160ee48.png)
 
